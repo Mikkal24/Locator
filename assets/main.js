@@ -4,29 +4,31 @@ var client = ZAFClient.init();
 client.invoke('resize', { width: '100%', height: '200px' });
 
 // get ticket information
-client.get('ticket.id').then(function(data){
-    console.log(data['ticket.id']);
-    requestTicketInfo(client, data['ticket.id']);
+client.get('ticket').then(function(data){
+    console.log(data);
+    requestTicketInfo(client, data.ticket.id, data.ticket.requester.id);
 });
 
-function requestTicketInfo(client, id){
+function requestTicketInfo(client, id, requesterID){
     var settings = {
-    url: `/api/v2/tickets/${id}/comments.json`,
-    type: 'GET',
-    dataType: 'json'
+        url: `/api/v2/tickets/${id}/comments.json`,
+        type: 'GET',
+        dataType: 'json'
     }
     client.request(settings).then(function(data){
-    console.log(data);
-    var locations = data.comments.map(index => {
-        return {
-        lat: index.metadata.system.latitude, 
-        lng: index.metadata.system.longitude
-        }
-    });
-    setMapMarkers(locations);
-    $('#location').text('location: '+data.comments[0].metadata.system.location);
+        let userComments = data.comments.filter(comment => comment.author_id === requesterID)
+        userComments = userComments.filter(comment => typeof comment.metadata.latitude !== 'undefined');
+        console.log(data);
+        var locations = userComments.map(index => {
+            return {
+                lat: index.metadata.system.latitude, 
+                lng: index.metadata.system.longitude
+            }
+        });
+        setMapMarkers(locations);
+        $('#location').text('location: '+userComments[0].metadata.system.location);
     }, function(response){
-    console.log(response.responseText);
+        console.log(response.responseText);
     })
 }
 
