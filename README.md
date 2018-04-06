@@ -25,4 +25,4 @@ Please submit bug reports to [https://github.com/Mikkal24/Locator](https://githu
 
 - Utility: It's really easy to see if there is a connection issue from certain regions with this app
 
-- Utility: Hightened suspicion if the contact's account is different than the one they are contacting from. 
+- Utility: Hightened suspicion if the contact's account is registered to a differnt country than the one they are contacting from. 
