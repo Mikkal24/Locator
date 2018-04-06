@@ -3,6 +3,8 @@
 This application surfaces the contact's location to provide more context about the contact for your agents.
 It also includes the time at the contact's location. 
 
+*Note* This app does not use any external API's because I wanted to make it for you guys and not be limited by API requests in case it got popular. Google maps would provide a lot more context but, I would need to pay for an enterprise subscription. If you're interested in paying for locator lmk! 
+
 ### The following information is displayed:
 
 * User Location
