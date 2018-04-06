@@ -10,7 +10,6 @@ if (getMapStatus() === 'show'){
 
 // get ticket information
 client.get('ticket').then(function(data){
-    console.log(data);
     requestTicketInfo(client, data.ticket.id, data.ticket.requester.id);
 });
 
@@ -58,11 +57,7 @@ function requestTicketInfo(client, id, requesterID){
                 "background-size": "cover"
             })
         }
-    }, function(response){
-        console.log(response.responseText);
-    })
-
-
+    });
 }
 
 function createMap(locations){
@@ -112,8 +107,6 @@ function setMapMarkers(locations){
 
         return marker
     })
-
-    console.log(markers);
     return markers;
 }
 
