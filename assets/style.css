@@ -1,0 +1,16 @@
+#location{
+    font-weight: bold;
+}
+
+.expander:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+#map{
+    display: none;
+}
+
+html{
+    overflow-y: auto;
+}

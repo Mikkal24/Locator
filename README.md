@@ -1,14 +1,18 @@
-# App name
+# Locator
 
-[brief description of the app]
+This application surfaces the contact's location to provide more context for your agents.
+It also includes the time at the contact's location. 
 
 ### The following information is displayed:
 
-* info1
-* info2
-* info3
+* User Location
+* Current time at the user's location
+* A button to hide the map because it's not super necessary
 
-Please submit bug reports to [Insert Link](). Pull requests are welcome.
+Please submit bug reports to [https://github.com/Mikkal24/Locator](https://github.com/Mikkal24/Locator).
 
-### Screenshot(s):
-[put your screenshots down here.]
+### Screenshots:
+
+(./screenshots/demo1.png)
+
+(./screenshots/demo2.png)
