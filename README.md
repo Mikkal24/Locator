@@ -3,6 +3,8 @@
 This application surfaces the contact's location to provide more context about the contact for your agents.
 It also includes the time at the contact's location. 
 
+*Note* This app does not use any external API's because I wanted to make it for you guys and not be limited by API requests in case it got popular. Google maps would provide a lot more context but, I would need to pay for an enterprise subscription. If you're interested in paying for locator lmk! 
+
 ### The following information is displayed:
 
 * User Location
@@ -13,9 +15,9 @@ Please submit bug reports to [https://github.com/Mikkal24/Locator](https://githu
 
 ### Screenshots:
 
-(./screenshots/demo1.png)
+![demo1](./screenshots/demo1.png)
 
-(./screenshots/demo2.png)
+![demo2](./screenshots/demo2.png)
 
 ### How I use this app:
 
@@ -23,4 +25,4 @@ Please submit bug reports to [https://github.com/Mikkal24/Locator](https://githu
 
 - Utility: It's really easy to see if there is a connection issue from certain regions with this app
 
-- Utility: Hightened suspicion if the contact's account is different than the one they are contacting from. 
+- Utility: Hightened suspicion if the contact's account is registered to a differnt country than the one they are contacting from. 
