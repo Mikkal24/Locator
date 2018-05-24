@@ -1,8 +1,8 @@
 {
   "app": {
-    "name": "Zen Tunes",
-    "short_description": "Play the famous zen tunes in your help desk.",
-    "long_description": "Play the famous zen tunes in your help desk and \n listen to the beats it has to offer.",
+    "name": "Locator",
+    "short_description": "Easily find contact location information",
+    "long_description": "Quickly see the contact's location displayed neatly on a map image with their current time",
     "installation_instructions": "Simply click install."
   }
 }

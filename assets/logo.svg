@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-<path id="Fill-3" d="M1.5,6.1C1.3,5.9,1,6,1,6.4l0,7c0,0.3,0.2,0.7,0.5,0.9l6,3.6C7.8,18.1,8,18,8,17.6l0-7.1c0-0.3-0.2-0.7-0.5-0.9
-	L1.5,6.1z"/>
-<path id="Fill-5" d="M10.5,17.9c-0.3,0.2-0.5,0-0.5-0.3l0-7c0-0.3,0.2-0.7,0.5-0.9l6-3.6C16.8,5.9,17,6,17,6.4l0,7.1
-	c0,0.3-0.2,0.7-0.5,0.9L10.5,17.9z"/>
-<path id="Fill-1" d="M2.2,3.7c-0.3,0.2-0.3,0.4,0,0.6l6.2,3.6C8.7,8,9.2,8,9.4,7.9l6.3-3.6c0.3-0.2,0.3-0.4,0-0.6L9.5,0.1
-	C9.2,0,8.8,0,8.5,0.1L2.2,3.7z"/>
-</svg>
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 73.359 125" enable-background="new 0 0 73.359 100" xml:space="preserve"><g><g><path fill="#010101" d="M36.68,0C16.457,0,0,16.454,0,36.678c0,26.153,31.386,60.164,32.724,61.597
+			c1.021,1.1,2.453,1.726,3.956,1.726c1.499,0,2.931-0.625,3.955-1.726c1.338-1.432,32.725-35.444,32.725-61.597
+			C73.359,16.453,56.903,0,36.68,0z M22.202,35.523c0-7.998,6.482-14.482,14.478-14.482c7.996,0,14.478,6.482,14.478,14.482
+			c0,7.996-6.481,14.478-14.478,14.478C28.685,50,22.202,43.518,22.202,35.523z"/></g></g><text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Phil Goodwin</text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>

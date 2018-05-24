@@ -1,16 +1,50 @@
-#location{
-    font-weight: bold;
+* {
+  box-sizing: border-box;
 }
 
-.expander:hover{
-    cursor: pointer;
-    background-color: lightgray;
+#location {
+  font-weight: bold;
+  font-size: 16px;
 }
 
-#map{
-    display: none;
+.expander {
+  border: 1px solid #626262;
+  border-radius: 3px;
+  padding: 1px 2px 2px 2px;
+  margin: 0px 2px;
+  max-height: 20px;
 }
 
-html{
-    overflow-y: auto;
+.expander img {
+  max-height: 18px;
+  transition: 500ms linear;
+}
+
+.expander:hover {
+  cursor: pointer;
+}
+
+#map {
+  display: none;
+}
+
+html {
+  overflow-y: auto;
+}
+
+.unknown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.unknown p {
+  font-size: 8px;
+}
+
+.unknown h1 {
+  font-size: 24px;
 }
