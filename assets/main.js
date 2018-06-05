@@ -8,6 +8,14 @@ if (getMapStatus() === "show") {
   hideMap();
 }
 
+const tagsEnabled = true;
+
+//get settings
+client.metadata().then(function(metadata) {
+  console.log(metadata.settings);
+  return tagsEnabled;
+});
+
 // get ticket information
 client.get("ticket").then(function(data) {
   requestTicketInfo(client, data.ticket.id, data.ticket.requester.id);
@@ -48,8 +56,10 @@ function requestTicketInfo(client, id, requesterID) {
       });
       getTime(locations[0]);
       var map = createMap(locations);
+      var locationString = userComments[0].metadata.system.location;
       // setMapMarkers(locations);
-      $("#location").text(userComments[0].metadata.system.location);
+      $("#location").text(locationString);
+      setTag(client, locationString);
     } else {
       $("#location").text("Location: " + "Unknown");
       $("#map").html(`
@@ -162,4 +172,15 @@ function ticker(timeZone, options) {
     var time = new Date().toLocaleString([], options);
     $("#time").text(time);
   }, 60000);
+}
+
+function setTag(client, location) {
+  /*
+   * You must enable the tagging of users and organizations in Zendesk Support for the 
+   * API calls to work. Select Manage > Settings > Customers, and enable the option.
+   */
+  let locationSplit = location.split(",");
+  let countryName = locationSplit[locationSplit.length - 1];
+
+  client.invoke("ticket.tags.add", countryName);
 }
