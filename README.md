@@ -15,9 +15,11 @@ Please submit bug reports to [https://github.com/Mikkal24/Locator](https://githu
 
 ### Screenshots:
 
-![demo1](./screenshots/demo1.png)
+![demo1](./assets/screenshot-0.png)
 
-![demo2](./screenshots/demo2.png)
+![demo2](./assets/screenshot-1.png)
+
+![demo3](./assets/screenshot-2.png)
 
 ### How I use this app:
 
