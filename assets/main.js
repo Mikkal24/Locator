@@ -179,8 +179,14 @@ function setTag(client, location) {
    * You must enable the tagging of users and organizations in Zendesk Support for the 
    * API calls to work. Select Manage > Settings > Customers, and enable the option.
    */
-  let locationSplit = location.split(",");
-  let countryName = locationSplit[locationSplit.length - 1];
 
+  let countryName = "";
+  if(location.includes(",")){
+  let locationSplit = location.split(", ");
+   countryName = locationSplit[locationSplit.length - 1];
+  } else {
+    countryName = location;
+  }
+  countryName = countryName.split(" ").join("_");
   client.invoke("ticket.tags.add", countryName);
 }
