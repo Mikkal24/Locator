@@ -8,12 +8,11 @@ if (getMapStatus() === "show") {
   hideMap();
 }
 
-const tagsEnabled = true;
+let tagsEnabled = false;
 
 //get settings
 client.metadata().then(function(metadata) {
-  console.log(metadata.settings);
-  return tagsEnabled;
+  return tagsEnabled = metadata.settings.addTags;
 });
 
 // get ticket information
@@ -59,7 +58,7 @@ function requestTicketInfo(client, id, requesterID) {
       var locationString = userComments[0].metadata.system.location;
       // setMapMarkers(locations);
       $("#location").text(locationString);
-      setTag(client, locationString);
+      if(tagsEnabled) setTag(client, locationString);
     } else {
       $("#location").text("Location: " + "Unknown");
       $("#map").html(`
